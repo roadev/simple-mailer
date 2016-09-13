@@ -3,19 +3,16 @@
     %meta{content: 'text/html; charset=UTF-8', 'http-equiv' => 'Content-Type'}
   %body
     .common-template
-      .header{style: 'background-color: #CD2524; width: 100%;'}
+      .header{style: 'width: 100%;'}
         .title{style: 'padding: 5px; font-weight: 100; font-size: 30px; color: #FFFFFF;'}
           %p{style: 'font-size: 15px; text-align: right;'}
           -# = image_tag 'http://railsgirls.com/images/railsgirls-logo.png', alt: 'Rails Girls'
-      .main-image{align: 'center', style: "width: -moz-calc(100% - 10px); width: calc(100% - 10px); width: -webkit-calc(100% - 10px); text-align: center; border: #CD2524 solid 5px; background-color: #CD2524;"}
-        = image_tag 'https://s3.amazonaws.com/informatica-educativa/mail_header_img.png', width: '100%'
+      .main-image{align: 'center', style: "width: -moz-calc(100% - 10px); width: calc(100% - 10px); width: -webkit-calc(100% - 10px); text-align: center;"}
+        = image_tag 'https://s3.amazonaws.com/informatica-educativa/mail_header_img.png', width: '100%', alt: 'Programando con Ruby - UCC'
       - greeting = @recipient.first_name.present? ? "¡Hola #{@recipient.first_name}!" : 'Hola!'
       %h2= greeting
       %p
         = simple_format BlueCloth.new(@contact.message).to_html
         %br
-      %p
-      .end{style: "background-color: #CD2524; width: 100%; height: 50px; padding: 20px 0px 20px 0px; text-align: right;"}
-        = image_tag 'https://s3.amazonaws.com/informatica-educativa/mail_footer_img.png', width: '100%'
-          
+
 
