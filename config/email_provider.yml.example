@@ -1,0 +1,23 @@
+development: &default_settings
+  email: the_email
+  account: the_account
+  password: "the_password"
+  #domain: the_domain
+  port: the_port
+  address: the_server
+
+staging:
+  <<: *default_settings
+
+test:
+  <<: *default_settings
+
+production:
+  
+  <<: *default_settings
+  email: <%= ENV['EMAIL'] %>
+  account: <%= ENV['ACCOUNT'] %>
+  password: <%= ENV['PASSWORD'] %>
+  domain: <%= ENV['DOMAIN'] %>
+  address: <%= ENV['ADDRESS'] %>
+  port: <%= ENV['PORT'] %>
