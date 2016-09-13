@@ -11,6 +11,7 @@ gem 'jquery-rails'
 gem 'simple_form'
 gem 'bluecloth'
 gem 'haml-rails'
+gem 'foundation-rails'
 
 # Gems used only for assets and not required
 # in production environments by default.
