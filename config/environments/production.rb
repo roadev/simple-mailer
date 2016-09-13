@@ -74,7 +74,7 @@ Mailer::Application.configure do
     #domain: email_provider['domain'],
     user_name: email_provider['account'],
     password: email_provider['password'],
-    authentication: :login
+    authentication: :login,
     enable_starttls_auto: true
   }
 
