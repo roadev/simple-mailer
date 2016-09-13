@@ -15,6 +15,7 @@ test:
 production:
   
   <<: *default_settings
+  sender: <%= ENV['SENDER'] %>
   email: <%= ENV['EMAIL'] %>
   account: <%= ENV['ACCOUNT'] %>
   password: <%= ENV['PASSWORD'] %>
