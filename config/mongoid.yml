@@ -9,7 +9,7 @@ development:
       # Provides the hosts the default client can connect to. Must be an array
       # of host:port pairs. (required)
       hosts:
-        - 192.168.0.9:27017
+        - localhost:27017
       options:
         # Change the default write concern. (default = { w: 1 })
         # write:
@@ -129,7 +129,7 @@ development:
     # Set the Mongoid and Ruby driver log levels when not in a Rails
     # environment. The Mongoid logger will be set to the Rails logger
     # otherwise.(default: :info)
-    # log_level: :info
+    log_level: :info
 test:
   clients:
     default:
@@ -140,3 +140,15 @@ test:
         read:
           mode: :primary
         max_pool_size: 1
+
+production:
+  clients:
+    default:
+      uri: <%= ENV['MONGODB_URI'] %>
+      options:
+        # The default timeout is 5, which is the time in seconds
+        # for a connection to time out.
+        # We recommend 15 because it allows for plenty of time
+        # in most operating environments.
+        connect_timeout: 15
+        log_level: :info

@@ -71,10 +71,10 @@ Mailer::Application.configure do
   config.action_mailer.smtp_settings = {
     address: email_provider['address'],
     port: email_provider['port'],
-    domain: email_provider['domain'],
+    #domain: email_provider['domain'],
     user_name: email_provider['account'],
     password: email_provider['password'],
-    authentication: :plain,
+    authentication: :login
     enable_starttls_auto: true
   }
 

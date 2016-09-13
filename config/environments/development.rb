@@ -40,12 +40,10 @@ Mailer::Application.configure do
     enable_starttls_auto: true,
     address: email_provider['address'],
     port: email_provider['port'],
-    domain: email_provider['domain'],
+    #domain: email_provider['domain'],
     user_name: email_provider['account'],
     password: email_provider['password'],
-    authentication: :plain,
-    ssl: true,
-    tls: true,
+    authentication: :login
   }
 
   config.action_mailer.default_url_options = {

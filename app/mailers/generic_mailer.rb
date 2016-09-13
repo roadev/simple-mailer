@@ -12,6 +12,6 @@ class GenericMailer < ActionMailer::Base
     @recipient = recipient
     @contact = contact
     email_provider = YAML.load(File.read("#{Rails.root}/config/email_provider.yml"))['development']
-    mail(from: email_provider['account'], to: @recipient.email, subject: @contact.subject)
+    mail(from: email_provider['email'], to: @recipient.email, subject: @contact.subject)
   end
 end
