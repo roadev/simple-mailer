@@ -1,57 +1,53 @@
-Name,Email,Event,Age,Company,Gender
-Stiven Trujillo,luis.trujilloor@campusucc.edu.co,1,23,Universidad Cooperativa de Colombia,M
-Roberto David Robles Molina,Roberto.Roblesm@campusucc.edu.co,1,27,Universidad Cooperativa de Colombia,M
-Geraldine Caicedo Hidalgo,geraldine.caicedo.h@gmail.com,1,23,Universidad del Valle,F
-Luis Mosquera,luis.mosquerav@campusucc.edu.co,1,20,Universidad Cooperativa de Colombia,M
-Stefany Zapata,speculator.netdraw@gmail.com,1,24,Autodidacta,F
-Diana Carolina Rivera Velasco,diana.rivera@campusucc.edu.co,2,33,Universidad Cooperativa de Colombia,F
-Edson Ramos,edramosc@gmail.com,3,24,Independiente,M
-Miguel Ángel Bolaños,mab015@hotmail.com,1,22,Green Valley Turismo,M
-Javier Lopez,jlopez3573@gmail.com,3,30,,M
-Juan Guillermo  Gómez,Juan.gomez01@gmail.com,3,32,leaidis,M
-Diana Carolina Hernández,dianacaro3552@gmail.com,3,24,Universidad del Valle,F
-Jose Abadia,jabadia83@gmail.com,1,32,Vass consultores,M
-Martha isabel Estupiñán,marthaisabel.estupinan@gmail.com,3,41,Tribu,F
-July andrea Benavides marmolejo,hardkandy1367@gmail.com,3,26,Umbrella,F
-Juan Pino,dejuata@hotmail.com,3,21,Universidad del Valle,M
-Alejandro Rosero,alejandroroserov@gmail.com,1,33,UAO,M
-Julian Alvarado,juanalsa@gmail.com,3,30,Coomeva EPS,M
-Alexandra Muñoz Suárez,alexmun-sua@hotmail.com,3,38,SENA,F
-Diana Caro,carito.417@hotmail.com,3,21,Universidad del valle,F
-Jose David Rendón Velásquez,rendon.josedavid@hotmail.com,1,34,HumanoTech,M
-Sebastián Jiménez,juansebas257@gmail.com,3,25,Universidad Cooperativa de Colombia,M
-Ana Gaviria,anagaviria19@gmail.com,3,22,Universidad Cooperativa de Colombia,F
-Pedro Padilla,pejomapar@gmail.com,3,30,IE JORGE ISAACS,M
-Lina fernanda Oll majin,ferchalina88@hotmail.com,3,27,Universidad Cooperativa de Colombia,F
-Jhon Pantoja,jhon.pantoja@correounivalle.edu.co,3,20,Universidad del Valle,M
-Greis Tatiana Bonilla Camacho,bonillagrace53@gmail.com,3,21,SENA(C.E.A.I),F
-David  Orejuela,daorejuela1@outlook.com,1,20,Universidad de San Buenaventura,M
-oscar carabali,oskr994@hotmail.com,0,22,Green Valley,M
-Stiven Castillo,stivencastillo.90@gmail.com,1,25,FADP,M
-Nathalia Ceballos,lia9801@hotmail.com,0,18,Universidad del Valle,F
-Derly Navia,derinavia1979@gmail.com,0,24,SENA(C.E.A.I),F
-sebastian sanchez,sebastian.sanchezre@campusucc.edu.co,0,20,Universidad Cooperativa de Colombia,M
-José Luis Guerrero,josel.guerrerop@campusucc.edu.co,3,27,Universidad Cooperativa de Colombia,M
-Maicol Castellanos,maikitol98@hotmail.com,0,18,Universidad Cooperativa de Colombia,M
-luis camilo salas ballesteros,luis.salasb@campusucc.edu.co,0,19,Universidad Cooperativa de Colombia,M
-Juan Esteban Bolaños Rivera,juan.bolanosr@campusucc.edu.co,2,21,Universidad Cooperativa de Colombia,M
-Juan Camilo  Betancourt Giraldo,camilobg1546@gmail.com,0,18,Universidad Cooperativa de Colombia,M
-Yuriana Mendez,yuriana.mendez@campusucc.edu.co,0,20,Universidad Cooperativa de Colombia,F
-Jorge Andrés  Cardona Montes,jorge.cardonam@campusucc.edu.co,0,23,Universidad Cooperativa de Colombia,M
-Jessika Dayana Morales,jeka9124@gmail.com,1,20,Universidad Cooperativa de Colombia,F
-Carmen Elisa Valencia,carmen.valenciac@campusucc.edu.co,3,21,Universidad Cooperativa de Colombia,F
-MARIELA ORDOÑEZ,elsa.ordonezp@campusucc.edu.co,3,34,Universidad Cooperativa de Colombia,F
-Ana Barona González,anamariabaronagonzalez@gmail.com,3,21,Universidad Cooperativa de Colombia,F
-Cesar Mauricio Rodriguez Camacho,maurin1997@outlook.com,3,19,Universidad Cooperativa de Colombia,M
-Milton ediws Bautista Cardona,ediws@hotmail.com,3,27,Universidad Cooperativa de Colombia,M
-Edinson Steven Arciniegas Arizala,esarciniegas@misena.edu.co,1,25,independiente ,M
-Jose Luis Ramirez rios,jose.ramirezri@campus.edu.co,3,18,Universidad Cooperativa de Colombia,M
-Andres felipe ordoñez gomez gomez,andres.ordonezg@campusucc.edu.co,2,21,Universidad Cooperativa de Colombia,M
-Victor Manuel Uzuriaga,victor.uzuriagam@campusucc.edu.co,3,30,Universidad Cooperativa de Colombia,M
-jesus sarmiento,antoniosar.43@gmail.com,2,32,Universidad Cooperativa de Colombia,M
-,,,,,
-,,13,,,
-,,4,,,
-,,24,,,
-,,,,,
-,Taller,37,,,
+Name,Email,Event,Age,Company,Gender,Room
+Stiven Trujillo,luis.trujilloor@campusucc.edu.co,1,23,Universidad Cooperativa de Colombia,M,305
+Roberto David Robles Molina,Roberto.Roblesm@campusucc.edu.co,1,27,Universidad Cooperativa de Colombia,M,305
+Geraldine Caicedo Hidalgo,geraldine.caicedo.h@gmail.com,1,23,Universidad del Valle,F,303
+Luis Mosquera,luis.mosquerav@campusucc.edu.co,1,20,Universidad Cooperativa de Colombia,M,305
+Stefany Zapata,speculator.netdraw@gmail.com,1,24,Autodidacta,F,305
+Diana Carolina Rivera Velasco,diana.rivera@campusucc.edu.co,2,33,Universidad Cooperativa de Colombia,F,0
+Edson Ramos,edramosc@gmail.com,3,24,Independiente,M,303
+Miguel Ángel Bolaños,mab015@hotmail.com,1,22,Green Valley Turismo,M,305
+Javier Lopez,jlopez3573@gmail.com,3,30,Independiente,M,303
+Juan Guillermo  Gómez,Juan.gomez01@gmail.com,2,32,leaidis,M,0
+Diana Carolina Hernández,dianacaro3552@gmail.com,3,24,Universidad del Valle,F,303
+Jose Abadia,jabadia83@gmail.com,1,32,Vass consultores,M,303
+Martha isabel Estupiñán,marthaisabel.estupinan@gmail.com,3,41,Tribu,F,305
+July andrea Benavides marmolejo,hardkandy1367@gmail.com,3,26,Umbrella,F,303
+Juan Pino,dejuata@hotmail.com,3,21,Universidad del Valle,M,303
+Alejandro Rosero,alejandroroserov@gmail.com,1,33,UAO,M,303
+Julian Alvarado,juanalsa@gmail.com,3,30,Coomeva EPS,M,303
+Alexandra Muñoz Suárez,alexmun-sua@hotmail.com,3,38,SENA,F,303
+Diana Caro,carito.417@hotmail.com,3,21,Universidad del valle,F,305
+Jose David Rendón Velásquez,rendon.josedavid@hotmail.com,1,34,HumanoTech,M,303
+Sebastián Jiménez,juansebas257@gmail.com,3,25,Universidad Cooperativa de Colombia,M,305
+Ana Gaviria,anagaviria19@gmail.com,3,22,Universidad Cooperativa de Colombia,F,305
+Pedro Padilla,pejomapar@gmail.com,3,30,IE JORGE ISAACS,M,303
+Lina fernanda Oll majin,ferchalina88@hotmail.com,3,27,Universidad Cooperativa de Colombia,F,305
+Jhon Pantoja,jhon.pantoja@correounivalle.edu.co,3,20,Universidad del Valle,M,303
+Greis Tatiana Bonilla Camacho,bonillagrace53@gmail.com,3,21,SENA(C.E.A.I),F,305
+David  Orejuela,daorejuela1@outlook.com,1,20,Universidad de San Buenaventura,M,303
+oscar carabali,oskr994@hotmail.com,1,22,Green Valley,M,303
+Stiven Castillo,stivencastillo.90@gmail.com,1,25,FADP,M,303
+Nathalia Ceballos,lia9801@hotmail.com,1,18,Universidad del Valle,F,303
+Derly Navia,derinavia1979@gmail.com,1,24,SENA(C.E.A.I),F,305
+sebastian sanchez,sebastian.sanchezre@campusucc.edu.co,1,20,Universidad Cooperativa de Colombia,M,303
+José Luis Guerrero,josel.guerrerop@campusucc.edu.co,3,27,Universidad Cooperativa de Colombia,M,303
+Maicol Castellanos,maikitol98@hotmail.com,1,18,Universidad Cooperativa de Colombia,M,305
+luis camilo salas ballesteros,luis.salasb@campusucc.edu.co,1,19,Universidad Cooperativa de Colombia,M,305
+Juan Esteban Bolaños Rivera,juan.bolanosr@campusucc.edu.co,2,21,Universidad Cooperativa de Colombia,M,0
+Juan Camilo  Betancourt Giraldo,camilobg1546@gmail.com,1,18,Universidad Cooperativa de Colombia,M,303
+Yuriana Mendez,yuriana.mendez@campusucc.edu.co,1,20,Universidad Cooperativa de Colombia,F,305
+Jorge Andrés  Cardona Montes,jorge.cardonam@campusucc.edu.co,1,23,Universidad Cooperativa de Colombia,M,305
+Jessika Dayana Morales,jeka9124@gmail.com,1,20,Universidad Cooperativa de Colombia,F,305
+Carmen Elisa Valencia,carmen.valenciac@campusucc.edu.co,3,21,Universidad Cooperativa de Colombia,F,305
+MARIELA ORDOÑEZ,elsa.ordonezp@campusucc.edu.co,3,34,Universidad Cooperativa de Colombia,F,305
+Ana Barona González,anamariabaronagonzalez@gmail.com,3,21,Universidad Cooperativa de Colombia,F,305
+Cesar Mauricio Rodriguez Camacho,maurin1997@outlook.com,3,19,Universidad Cooperativa de Colombia,M,305
+Milton ediws Bautista Cardona,ediws@hotmail.com,3,27,Universidad Cooperativa de Colombia,M,305
+Edinson Steven Arciniegas Arizala,esarciniegas@misena.edu.co,1,25,independiente ,M,305
+Jose Luis Ramirez rios,jose.ramirezri@campusucc.edu.co,3,18,Universidad Cooperativa de Colombia,M,305
+Andres felipe ordoñez gomez gomez,andres.ordonezg@campusucc.edu.co,2,21,Universidad Cooperativa de Colombia,M,0
+Victor Manuel Uzuriaga,victor.uzuriagam@campusucc.edu.co,3,30,Universidad Cooperativa de Colombia,M,305
+jesus sarmiento,antoniosar.43@gmail.com,2,32,Universidad Cooperativa de Colombia,M,0
+Jhon Cano,jhon.canob@campusucc.edu.co,3,38,Universidad Cooperativa de Colombia,M,305
+Kathrin Sánchez,kathe.sanchez.0809@gmail.com,1,26,Gearsis SAS,F,305

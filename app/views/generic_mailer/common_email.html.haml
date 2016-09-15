@@ -10,9 +10,16 @@
       .main-image{align: 'center', style: "width: -moz-calc(100% - 10px); width: calc(100% - 10px); width: -webkit-calc(100% - 10px); text-align: center;"}
         = image_tag 'https://s3.amazonaws.com/informatica-educativa/mail_header_img.png', width: '100%', alt: 'Programando con Ruby - UCC'
       - greeting = @recipient.first_name.present? ? "¡Hola #{@recipient.first_name}!" : 'Hola!'
+      - speaker = "Kattya Cuevas" if @recipient.room == 303
+      - speaker = "Juan Roa" if @recipient.room == 305
       %h2= greeting
       %p
         = simple_format BlueCloth.new(@contact.message).to_html
-        %br
+      %h3 Tu taller es con:
+      %p 
+        %b= speaker
+        en la sala:
+        %b 
+          = @recipient.room
 
 

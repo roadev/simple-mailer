@@ -10,6 +10,10 @@
     .form-inputs
       .row
         .span12
+          %b Event
+          = f.input :event, required: true, label: false, autofocus: true, collection: %w(1 2 3)
+          %b Room
+          = f.input :room, required: true, label: false, autofocus: true, collection: %w(303 305)
           %b Recipient
           = f.input :subject, required: true, placeholder: t(:email_placeholder)
           %b Markdown mail body
@@ -17,4 +21,4 @@
       .row
         .span12
           .form-actions
-            = f.submit :submit, {:class => "button"} 
+            = f.submit :submit, {:class => "button"}

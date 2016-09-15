@@ -1,10 +1,14 @@
 %h1 Listing people
 
-%table{:class => "hover"}
+%table{class: "hover"}
   %tr
     %th Name
     %th Event
     %th Email
+    %th Age
+    %th Gender
+    %th Company
+    %th Room
     %th
     %th
     %th
@@ -14,9 +18,13 @@
       %td= person.name
       %td= person.event
       %td= person.email
+      %td= person.age
+      %td= person.gender
+      %td= person.company
+      %td= person.room
       %td= link_to 'Show', person
       %td= link_to 'Edit', edit_person_path(person)
-      %td= link_to 'Destroy', person, :method => :delete, :data => { :confirm => 'Are you sure?' }
+      %td= link_to 'Destroy', person, method: :delete, data: { :confirm => 'Are you sure?' }
 
 %br
 

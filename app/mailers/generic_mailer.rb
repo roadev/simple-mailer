@@ -1,6 +1,6 @@
 class GenericMailer < ActionMailer::Base
   def self.send_common_email(contact_form)
-    recipients = Person.all
+    recipients = Person.by_event_and_room(contact_form.event, contact_form.room)
     recipients.each do |recipient|
       puts recipient.name
       common_email(recipient, contact_form).deliver_now!

@@ -6,6 +6,7 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
-Person.find_or_create_by name: 'Johan Tique', email: 'johan.tique@gmail.com', gender: 'm', rol: 'assistant'
-Person.find_or_create_by name: 'Johan Tique', email: 'johan_tique@yahoo.com.co', gender: 'm', rol: 'admin'
-Person.find_or_create_by name: 'Johan Tique', email: 'johan_tique@hotmail.com', gender: 'm', rol: 'admin'
+Person.find_or_create_by name: 'Juan Roa', email: 'jdroa92@gmail.com', gender: 'm', event: 1, company: 'CreaDev', room: 303, age: 20
+Person.find_or_create_by name: 'Ventas', email: 'ventas@alcancearoa.com', gender: 'm', event: 2, company: 'Alcance@Roa', room: 305, age: 21
+Person.find_or_create_by name: 'MOOC Fernando', email: 'juanroa@informaticaeducativaucc.com', gender: 'm', event: 3, company: 'Semillero de Investigación', room: 305, age: 25
+Person.find_or_create_by name: 'Sebastian Jiménez', email: 'soporte@gearsis.com', gender: 'm', event: 3, company: 'GearsIS SAS', room: 303, age: 24

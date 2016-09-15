@@ -2,12 +2,13 @@ class ContactForm
   include ActiveAttr::Model
   include ActiveAttr::TypecastedAttributes
 
-  attribute :rol, default: 'attendees'
+  attribute :event
+  attribute :room
   attribute :message
   attribute :subject
-  attribute :welcome, type: Boolean
+  #attribute :welcome, type: Boolean
 
-  validates_presence_of :message, :rol, :subject
+  validates_presence_of :message, :event, :subject
 
   def send_it
     if valid?
