@@ -22,3 +22,4 @@ config/mongoid.yml
 config/email_provider.yml
 people.csv
 possible_attendants.csv
+app/services/event.csv
