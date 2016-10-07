@@ -1,4 +1,5 @@
 development: &default_settings
+  sender: the_sender
   email: the_email
   account: the_account
   password: "the_password"
@@ -13,8 +14,9 @@ test:
   <<: *default_settings
 
 production:
-  
+
   <<: *default_settings
+  sender: <%= ENV['SENDER'] %>
   email: <%= ENV['EMAIL'] %>
   account: <%= ENV['ACCOUNT'] %>
   password: <%= ENV['PASSWORD'] %>
