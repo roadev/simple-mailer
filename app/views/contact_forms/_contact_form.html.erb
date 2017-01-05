@@ -1,0 +1,29 @@
+<h3>Send bulk mail</h3>
+
+<section class="row">
+
+    <%= simple_form_for @contact_form do |f| %>
+      <% if @contact_form.errors.any? %>
+        <div id="error_explanation">
+          <h2>
+            <%= "#{pluralize(@contact_form.errors.count, 'error')} prohibited this document from being saved:" %>
+          </h2>
+          <ul>
+            <% @contact_form.errors.full_messages.each do |msg| %>
+              <li>
+                <%= msg %>
+              </li>
+            <% end %>
+          </ul>
+        </div>
+      <% end %>
+      <div class="medium-12 columns">
+        <%= f.input :rol, required: true, label: 'Role', autofocus: true, collection: %w(assistant coach admin attendant) %>
+        <%= f.input :subject, required: true, placeholder: t(:email_placeholder) %>
+        <%= f.input :message, as: :text, label: 'Message', placeholder: t(:message_placeholder) %>
+        <%= f.submit :submit, class: 'button' %>
+      </div>
+
+    <% end %>
+
+</section>
