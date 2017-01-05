@@ -7,6 +7,6 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 Person.find_or_create_by name: 'Juan Roa', email: 'jdroa92@gmail.com', gender: 'm', rol: 'admin'
-Person.find_or_create_by name: 'Diana Carolina', email: 'dianacaro3552@gmail.com', gender: 'f', rol: 'admin'
-Person.find_or_create_by name: 'Johan Tique', email: 'johan.tique@gmail.com', gender: 'm', rol: 'admin'
-Person.find_or_create_by name: 'Geraldine Caicedo', email: 'geraldine.caicedo.h@gmail.com', gender: 'f', rol: 'admin'
+#Person.find_or_create_by name: 'Diana Carolina', email: 'dianacaro3552@gmail.com', gender: 'f', rol: 'admin'
+#Person.find_or_create_by name: 'Johan Tique', email: 'johan.tique@gmail.com', gender: 'm', rol: 'admin'
+#Person.find_or_create_by name: 'Geraldine Caicedo', email: 'geraldine.caicedo.h@gmail.com', gender: 'f', rol: 'admin'

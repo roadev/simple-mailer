@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-ruby '2.3.1'
+ruby '2.3.3'
 
 gem 'rails', '4.2.6'
 gem 'mongoid', '~> 5.1.0'
@@ -13,6 +13,7 @@ gem 'bluecloth'
 gem 'haml-rails'
 gem 'pry-rails'
 gem 'rb-readline', require: false
+gem 'puma'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -44,7 +45,6 @@ end
 
 group :production do
   gem 'rails_12factor'
-  gem 'unicorn'
+  #gem 'unicorn'
   gem 'rails_stdout_logging', '~> 0.0.5'
 end
-
