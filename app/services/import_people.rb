@@ -15,7 +15,7 @@ class ImportPeople
   #
   def call(import_people_form)
     CSV.foreach(import_people_form.file.tempfile, headers: true) do |row|
-      Person.find_or_create_by name: row['Name'].to_s.downcase, email: row['Email'].downcase, gender: row['Gender'], rol: row['Role']
+      Person.find_or_create_by name: row['Name'].to_s.split.map(&:capitalize).join(' '), email: row['Email'].downcase, gender: row['Gender'], rol: row['Role']
     end
     true
   rescue => e
