@@ -5,8 +5,9 @@ class ContactForm
   attribute :role, default: 'attendees'
   attribute :message
   attribute :subject
+  attribute :gender
 
-  validates_presence_of :message, :role, :subject
+  validates_presence_of :message, :role, :subject, :gender
 
   def send_it
     if valid?

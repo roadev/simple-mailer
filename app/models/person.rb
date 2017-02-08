@@ -10,7 +10,8 @@ class Person
   validates_presence_of :name, :role, :email
   validates_format_of :email, :with => /\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i
 
-  scope :by_role, lambda{|role| where(role: role)}
+  scope :by_role, lambda { |role| where(role: role) }
+  scope :by_gender, lambda { |gender| where(gender: gender) }
 
   def first_name
     name.present? ? name.split(' ')[0].capitalize : ''
