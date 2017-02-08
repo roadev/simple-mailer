@@ -24,3 +24,4 @@ people.csv
 possible_attendants.csv
 *.csv
 seeds/
+*.DS_Store
