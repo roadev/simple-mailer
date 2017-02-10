@@ -1,6 +1,6 @@
 class GenericMailer < ActionMailer::Base
   def self.send_common_email(contact_form)
-    recipients = Person.by_role(contact_form.role) && Person.by_gender(contact_form.gender)
+    recipients = Person.by_role(contact_form.role).by_gender(contact_form.gender)
     recipients.each do |recipient|
       puts recipient.name
       common_email(recipient, contact_form).deliver_now!
