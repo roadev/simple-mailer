@@ -6,14 +6,14 @@ class Person
   field :role, type: String, default: 'assistant'
   field :email, type: String
   field :gender, type: String
-  field :register_date, type: Date
-  field :birth_date, type: Date
+  field :register_date, type: String
+  field :birth_date, type: String
   field :phone, type: String
   field :level, type: String
   field :motivation, type: String
   field :expectation, type: String
   field :heard_ror, type: String
-  field :laptop, type: Boolean
+  field :laptop, type: String
   field :so, type: String
   field :attended, type: String
   field :how_did_you_find_it, type: String

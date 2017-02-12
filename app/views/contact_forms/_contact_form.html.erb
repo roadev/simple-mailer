@@ -18,7 +18,7 @@
         </div>
       <% end %>
       <div class="medium-12 columns">
-        <%= f.input :role, required: true, label: 'Role', autofocus: true, collection: %w(assistant coach admin attendant) %>
+        <%= f.input :role, required: true, label: 'Role', autofocus: true, collection: %w(assistant coach admin) %>
         <%= f.input :gender, required: true, label: 'Gender', autofocus: true, collection: %w(f m) %>
         <%= f.input :subject, required: true, placeholder: t(:email_placeholder) %>
         <%= f.input :message, as: :text, label: 'Message', placeholder: t(:message_placeholder) %>
