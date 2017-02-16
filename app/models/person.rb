@@ -17,12 +17,21 @@ class Person
   field :so, type: String
   field :attended, type: String
   field :how_did_you_find_it, type: String
+  field :days, type: String
+  field :tshirt_size, type: String
+  field :expectation2, type: String
+  field :languages, type: String
+  field :data_treatment, type: String
 
   validates_presence_of :name, :role, :email
   validates_format_of :email, :with => /\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i
 
   scope :by_role, lambda { |role| where(role: role) }
   scope :by_gender, lambda { |gender| where(gender: gender) }
+  scope :by_laptop, lambda { |laptop| where(laptop: laptop) }
+  scope :by_days, lambda { |days| where(days: days) }
+  scope :by_level, lambda { |level| where(level: level) }
+  scope :by_tshirt, lambda { |tshirt| where(tshirt_size: tshirt) }
 
   def first_name
     name.present? ? name.split(' ')[0].capitalize : ''

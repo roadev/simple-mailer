@@ -1,8 +1,50 @@
-<h1>Listing people</h1>
-<table>
+<!--
+<form class="form-group">
+  <%#  select_tag(@people, options_for_select(People.all.map {|person| [category.name, category.id]}, @category_id), onchange => 'form.submit()') %>
+  <select multiple="multiple" id="hola">
+    <option>dasd</option>
+    <option>dasd</option>
+    <option>dasd</option>
+  </select>
+  <input type="submit" value="Filter" />
+</form> -->
+<% @tshirt1 = "XS" %>
+<% @tshirt2 = "S" %>
+<% @tshirt3 = "M" %>
+<% @tshirt4 = "L" %>
+<% @tshirt5 = "XL" %>
+
+<br>
+<br>
+<h4>Girls with tshirt_size = <%= @tshirt1 %></h4>
+<h5>
+  <%= Person.by_role("assistant").by_gender("f").by_tshirt(@tshirt1).count %>
+</h5>
+<h4>Girls with tshirt_size = <%= @tshirt2 %></h4>
+<h5>
+  <%= Person.by_role("assistant").by_gender("f").by_tshirt(@tshirt2).count %>
+</h5>
+<h4>Girls with tshirt_size = <%= @tshirt3 %></h4>
+<h5>
+  <%= Person.by_role("assistant").by_gender("f").by_tshirt(@tshirt3).count %>
+</h5>
+<h4>Girls with tshirt_size = <%= @tshirt4 %></h4>
+<h5>
+  <%= Person.by_role("assistant").by_gender("f").by_tshirt(@tshirt4).count %>
+</h5>
+<h4>Girls with tshirt_size = <%= @tshirt5 %></h4>
+<h5>
+  <%= Person.by_role("assistant").by_gender("f").by_tshirt(@tshirt5).count %>
+</h5>
+
+<% @people = Person.by_role("assistant").by_gender("f") %>
+<!-- <h3>Listing people - LAPTOP=YES, GENDER=FEMALE</h3> -->
+<table class="highlight">
   <tr>
-    <th>Name</th>
-    <th>Role</th>
+    <th>Tshirt Size</th>
+    <th>Days</th>
+    <th>Gender</th>
+    <th>Laptop</th>
     <th>Email</th>
     <th></th>
     <th></th>
@@ -11,10 +53,16 @@
   <% @people.each do |person| %>
     <tr>
       <td>
-        <%= person.name %>
+        <%= person.tshirt_size %>
       </td>
       <td>
-        <%= person.role %>
+        <%= person.days %>
+      </td>
+      <td>
+        <%= person.gender %>
+      </td>
+      <td>
+        <%= person.laptop %>
       </td>
       <td>
         <%= person.email %>

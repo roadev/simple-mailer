@@ -14,7 +14,7 @@ gem 'haml-rails'
 gem 'pry-rails'
 gem 'rb-readline', require: false
 gem 'puma'
-gem 'foundation-rails'
+gem 'materialize-sass'
 
 # Gems used only for assets and not required
 # in production environments by default.
