@@ -37,7 +37,27 @@
   <%= Person.by_role("assistant").by_gender("f").by_tshirt(@tshirt5).count %>
 </h5>
 
-<% @people = Person.by_role("assistant").by_gender("f") %>
+<h2>Dos días</h2>
+<% @people = Person.by_role("assistant").by_gender("f").by_days("vs") %>
+<h3>
+  <%= Person.by_role("assistant").by_gender("f").by_days("vs").count %>
+</h3>
+<br>
+<h2>Sábado</h2>
+<h3>
+  <%= Person.by_role("assistant").by_gender("f").by_days("s").count %>
+</h3>
+
+<h2>NO Laptop dos días</h2>
+<h3>
+  <%= Person.by_role("assistant").by_gender("f").by_days("vs").by_laptop("no").count %>
+</h3>
+
+<h2>NO Laptop sábado</h2>
+<h3>
+  <%= Person.by_role("assistant").by_gender("f").by_days("s").by_laptop("no").count %>
+</h3>
+
 <!-- <h3>Listing people - LAPTOP=YES, GENDER=FEMALE</h3> -->
 <table class="highlight">
   <tr>
