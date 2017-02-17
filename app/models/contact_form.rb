@@ -6,6 +6,7 @@ class ContactForm
   attribute :message
   attribute :subject
   attribute :gender
+  attribute :accepted
 
   validates_presence_of :message, :role, :subject, :gender
 

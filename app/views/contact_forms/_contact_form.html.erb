@@ -17,12 +17,33 @@
           </ul>
         </div>
       <% end %>
-      <div class="medium-12 columns">
-        <%= f.input :role, required: true, label: 'Role', autofocus: true, collection: %w(assistant coach admin) %>
-        <%= f.input :gender, required: true, label: 'Gender', autofocus: true, collection: %w(f m) %>
-        <%= f.input :subject, required: true, placeholder: t(:email_placeholder) %>
-        <%= f.input :message, as: :text, label: 'Message', placeholder: t(:message_placeholder) %>
-        <%= f.submit :submit, class: 'button' %>
+      <div class="row">
+        <div class="col s6">
+          <%= f.input :role, required: true, label: 'Role', autofocus: true, collection: %w(assistant coach admin) %>
+        </div>
+        <div class="col s6">
+          <%= f.input :gender, required: true, label: 'Gender', autofocus: true, collection: %w(f m) %>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s6">
+          <%= f.check_box :accepted, type:"checkbox", id:"accepted", class: "filled-in" %>
+          <label class="strong color-black" for="accepted">¿Confirmado?</label>
+        </div>
+        <div class="col s6">
+          <%= f.input :subject, required: true, placeholder: t(:email_placeholder) %>
+        </div>
+      </div>
+      <div class="row center">
+        <div class="">
+          <%= f.input :message, as: :text, label: 'Message', placeholder: t(:message_placeholder) %>
+        </div>
+      </div>
+      <div class="row center">
+        <div class="col s12">
+          <%= f.submit :submit, class: 'btn' %>
+        </div>
+
       </div>
 
     <% end %>
