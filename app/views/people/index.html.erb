@@ -14,9 +14,7 @@
 <% @tshirt4 = "L" %>
 <% @tshirt5 = "XL" %>
 
-<br>
-<br>
-<h4>Girls with tshirt_size = <%= @tshirt1 %></h4>
+<!-- <h4>Girls with tshirt_size = <%= @tshirt1 %></h4>
 <h5>
   <%= Person.by_role("assistant").by_gender("f").by_tshirt(@tshirt1).count %>
 </h5>
@@ -36,70 +34,70 @@
 <h5>
   <%= Person.by_role("assistant").by_gender("f").by_tshirt(@tshirt5).count %>
 </h5>
+<br/> -->
+<div class="row center">
+  <div class="col s6">
+    <h4>Total confirmadas</h4>
+    <h5>
+      <%= Person.by_role("assistant").by_gender("f").by_accepted(true).count %>
+    </h5>
+  </div>
+  <div class="col s6">
+    <h4>Dos días</h4>
+    <h5>
+      <%= Person.by_role("assistant").by_gender("f").by_days("vs").count %>
+    </h5>
+  </div>
+</div>
+<div class="row center">
+  <h4>Sábado</h4>
+  <h5>
+    <%= Person.by_role("assistant").by_gender("f").by_days("s").count %>
+  </h5>
+</div>
 
-<h2>Dos días</h2>
-<% @people = Person.by_role("assistant").by_gender("f").by_days("vs") %>
-<h3>
-  <%= Person.by_role("assistant").by_gender("f").by_days("vs").count %>
-</h3>
-<br>
-<h2>Sábado</h2>
-<h3>
-  <%= Person.by_role("assistant").by_gender("f").by_days("s").count %>
-</h3>
 
-<h2>NO Laptop dos días</h2>
-<h3>
-  <%= Person.by_role("assistant").by_gender("f").by_days("vs").by_laptop("no").count %>
-</h3>
 
-<h2>NO Laptop sábado</h2>
-<h3>
-  <%= Person.by_role("assistant").by_gender("f").by_days("s").by_laptop("no").count %>
-</h3>
+
 
 <!-- <h3>Listing people - LAPTOP=YES, GENDER=FEMALE</h3> -->
 <table class="highlight">
   <tr>
-    <th>Tshirt Size</th>
-    <th>Days</th>
-    <th>Gender</th>
-    <th>Laptop</th>
+    <th>Nombre</th>
     <th>Email</th>
+    <th>Talla</th>
+    <th>Laptop</th>
     <th></th>
     <th></th>
     <th></th>
   </tr>
-  <% @people.each do |person| %>
+  <% @accepted_people.each do |person| %>
     <tr>
       <td>
-        <%= person.tshirt_size %>
-      </td>
-      <td>
-        <%= person.days %>
-      </td>
-      <td>
-        <%= person.gender %>
-      </td>
-      <td>
-        <%= person.laptop %>
+        <%= person.name %>
       </td>
       <td>
         <%= person.email %>
       </td>
       <td>
-        <%= link_to 'Show', person %>
+        <%= person.tshirt_size %>
       </td>
       <td>
-        <%= link_to 'Edit', edit_person_path(person) %>
+        <%= person.laptop %>
       </td>
       <td>
-        <%= link_to 'Destroy', person, :method => :delete, :data => { :confirm => 'Are you sure?' } %>
+        <%= link_to 'Ver', person %>
+      </td>
+      <td>
+        <%= link_to 'Check in', edit_person_path(person) %>
+      </td>
+      <td>
+        <%# link_to 'Destroy', person, :method => :delete, :data => { :confirm => 'Are you sure?' } %>
       </td>
     </tr>
   <% end %>
 </table>
 <br/>
-<%= link_to 'New Person', new_person_path %>
+<%= link_to 'Nuevo Asistente', new_person_path %>
 <br/>
-<%= link_to 'Back to home', root_path %>
+<%= link_to 'Volver a home', root_path %>

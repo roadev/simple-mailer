@@ -3,6 +3,7 @@ class PeopleController < ApplicationController
   # GET /people.json
   def index
     @people = Person.all
+    @accepted_people = Person.by_gender('f').by_accepted(true).order_by(name: :asc)
 
     respond_to do |format|
       format.html # index.html.erb
@@ -84,6 +85,6 @@ class PeopleController < ApplicationController
   private
 
   def person_params
-    params.require(:person).permit(:name, :role, :gender, :email)
+    params.require(:person).permit(:name, :role, :gender, :email, :attended_friday, :attended_saturday, :profession)
   end
 end

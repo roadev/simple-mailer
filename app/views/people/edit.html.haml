@@ -1,7 +1,6 @@
-%h1 Editing person
+%h3 Actualizando asistente
 
 = render 'form'
 
-= link_to 'Show', @person
-\|
-= link_to 'Back', people_path
+= link_to 'Show', @person, class: 'btn'
+= link_to 'Back', :back, class: 'btn'

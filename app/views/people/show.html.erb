@@ -13,6 +13,6 @@
   <b>Email:</b>
   <%= @person.email %>
 </p>
-<%= link_to 'Edit', edit_person_path(@person) %>
-\|
-<%= link_to 'Back', people_path %>
+<%= link_to 'Check in', edit_person_path(@person), class: 'btn' %>
+
+<%= link_to 'Volver', people_path, class: 'btn' %>

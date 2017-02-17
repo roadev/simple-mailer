@@ -22,6 +22,14 @@ class Person
   field :expectation2, type: String
   field :languages, type: String
   field :data_treatment, type: String
+  field :profession, type: String
+  field :attended_friday, type: Boolean
+  field :attended_saturday, type: Boolean
+  field :accepted, type: Boolean
+
+  def self.order(type)
+    super(type.asc)
+  end
 
   validates_presence_of :name, :role, :email
   validates_format_of :email, :with => /\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i
@@ -32,6 +40,8 @@ class Person
   scope :by_days, lambda { |days| where(days: days) }
   scope :by_level, lambda { |level| where(level: level) }
   scope :by_tshirt, lambda { |tshirt| where(tshirt_size: tshirt) }
+  scope :by_email, lambda { |email| where(email: email) }
+  scope :by_accepted, lambda { |accepted| where(accepted: accepted) }
 
   def first_name
     name.present? ? name.split(' ')[0].capitalize : ''
